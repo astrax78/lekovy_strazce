@@ -1,5 +1,6 @@
 {
-  "buildCommand": "npm run vercel-build",
+  "installCommand": "npm install && npx expo install react-dom react-native-web -- --fix",
+  "buildCommand": "npx expo export --platform web",
   "outputDirectory": "dist",
   "devCommand": "npx expo start --web",
   "framework": null,
