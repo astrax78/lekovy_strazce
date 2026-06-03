@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npx expo install react-dom react-native-web -- --fix && npx expo export --platform web",
+  "buildCommand": "npx expo export --platform web",
   "outputDirectory": "dist",
+  "devCommand": "npx expo start --web",
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/_expo/(.*)", "dest": "/_expo/$1" },
