@@ -2,6 +2,7 @@
   "buildCommand": "npx expo export --platform web",
   "outputDirectory": "dist",
   "devCommand": "npx expo start --web",
+  "framework": null,
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/_expo/(.*)", "dest": "/_expo/$1" },
