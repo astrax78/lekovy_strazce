@@ -14,7 +14,7 @@
       "distribution": "internal",
       "developmentClient": false,
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://lekovy-strazce.onrender.com/api"
+        "EXPO_PUBLIC_API_URL": "https://lekovy-strazce.vercel.app/api"
       }
     },
     "production": {
