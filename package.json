@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "expo": "~56.0.8",
@@ -27,8 +28,6 @@
     "dev": "node server/index.js & npx expo start",
     "build:web": "expo export --platform web",
     "vercel-build": "npx expo install react-dom react-native-web -- --fix && npx expo export --platform web"
-
   },
-
   "private": true
 }

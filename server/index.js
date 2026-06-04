@@ -1,12 +1,35 @@
-// ─── Vercel Serverless Function ──────────────────────────────────────────────
-// Nahrazuje původní Express proxy server (server/index.js)
-// Volá DeepSeek API pro analýzu lékových interakcí
+require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
 
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/chat/completions';
+const app = express();
+const PORT = 3001;
 
-// ─── Systémový prompt (stejný jako v deepseekService.ts a server/index.js) ──
+// Povolíme CORS pro všechny origins (vývojové prostředí)
+app.use(cors());
+app.use(express.json());
 
-const SYSTEM_PROMPT = `Jsi expert na klinickou farmacii a lékařskou bezpečnost. Tvým úkolem je analyzovat seznam léků a na základě poskytnutých textů z příbalových letáků zjistit, zda mezi nimi nedochází k nebezpečným interakcím (vzájemnému ovlivňování účinků, zvýšení toxicity, snížení účinnosti nebo ohrožení zdraví pacienta).
+app.post('/api/analyze', async (req, res) => {
+  const { medicines } = req.body;
+
+  if (!medicines || !Array.isArray(medicines) || medicines.length < 2) {
+    return res.status(400).json({
+      error: 'Je třeba zadat alespoň 2 léky k analýze.',
+    });
+  }
+
+  const apiKey = process.env.EXPO_PUBLIC_DEEPSEEK_API_KEY;
+
+  if (!apiKey) {
+    return res.status(500).json({
+      error:
+        'Chybí API klíč pro DeepSeek. Nastavte ho v .env souboru jako EXPO_PUBLIC_DEEPSEEK_API_KEY.',
+    });
+  }
+
+  // ─── Systémový prompt (stejný jako v deepseekService.ts) ──────────────────
+
+  const SYSTEM_PROMPT = `Jsi expert na klinickou farmacii a lékařskou bezpečnost. Tvým úkolem je analyzovat seznam léků a na základě poskytnutých textů z příbalových letáků zjistit, zda mezi nimi nedochází k nebezpečným interakcím (vzájemnému ovlivňování účinků, zvýšení toxicity, snížení účinnosti nebo ohrožení zdraví pacienta).
 
 Uživatel ti dodá data ve formátu pole objektů, kde každý objekt obsahuje:
 - "nazev": Název léku
@@ -46,30 +69,6 @@ Do pole "popis_problemu" u každé interakce VŽDY napiš konkrétní větu z le
 
 Všechny texty v JSONu musí být v českém jazyce, srozumitelné pro běžného laického pacienta, ale medicínsky přesné.`;
 
-module.exports = async function handler(req, res) {
-
-  // Pouze POST požadavky
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
-  const { medicines } = req.body;
-
-  if (!medicines || !Array.isArray(medicines) || medicines.length < 2) {
-    return res.status(400).json({
-      error: 'Je třeba zadat alespoň 2 léky k analýze.',
-    });
-  }
-
-  const apiKey = process.env.EXPO_PUBLIC_DEEPSEEK_API_KEY;
-
-  if (!apiKey) {
-    return res.status(500).json({
-      error:
-        'Chybí API klíč pro DeepSeek. Nastavte ho v Vercel dashboardu jako EXPO_PUBLIC_DEEPSEEK_API_KEY.',
-    });
-  }
-
   // ─── Příprava payloadu ────────────────────────────────────────────────────
 
   const medicinesPayload = medicines.map((m) => ({
@@ -81,7 +80,7 @@ module.exports = async function handler(req, res) {
     console.log('📤 Odesílám požadavek na DeepSeek API...');
     console.log('📦 Data:', JSON.stringify(medicinesPayload, null, 2));
 
-    const response = await fetch(DEEPSEEK_API_URL, {
+    const response = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -138,4 +137,9 @@ module.exports = async function handler(req, res) {
       error: `Neočekávaná chyba při komunikaci s DeepSeek API: ${error.message}`,
     });
   }
-}
+});
+
+app.listen(PORT, () => {
+  console.log(`🚀 Proxy server běží na http://localhost:${PORT}`);
+  console.log(`📡 Endpoint: POST http://localhost:${PORT}/api/analyze`);
+});

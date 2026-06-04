@@ -7,7 +7,10 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Přístup ke kameře je potřebný pro skenování krabiček léků."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +19,28 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.astrax78.lekovy_strazce"
     },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Přístup ke kameře je potřebný pro skenování krabiček léků."
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2f9a1dc6-6de6-456b-8bbe-d800ba6d4bac"
+      }
     }
   }
 }

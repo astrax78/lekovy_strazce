@@ -1,10 +1,26 @@
-// ─── Vercel Serverless Function ──────────────────────────────────────────────
-// Nahrazuje původní Express proxy server (server/index.js)
-// Volá DeepSeek API pro analýzu lékových interakcí
+// ─── Typy ──────────────────────────────────────────────────────────────────────
 
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/chat/completions';
+interface Medicine {
+  id: number;
+  name: string;
+  leafletText: string;
+}
 
-// ─── Systémový prompt (stejný jako v deepseekService.ts a server/index.js) ──
+interface Interakce {
+  lek_A: string;
+  lek_B: string;
+  zavaznost: 'warning' | 'danger';
+  popis_problemu: string;
+  doporuceni: string;
+}
+
+export interface AnalyzeResult {
+  celkovy_status: 'safe' | 'warning' | 'danger';
+  shrnuti: string;
+  nalezené_interakce: Interakce[];
+}
+
+// ─── Systémový prompt ──────────────────────────────────────────────────────────
 
 const SYSTEM_PROMPT = `Jsi expert na klinickou farmacii a lékařskou bezpečnost. Tvým úkolem je analyzovat seznam léků a na základě poskytnutých textů z příbalových letáků zjistit, zda mezi nimi nedochází k nebezpečným interakcím (vzájemnému ovlivňování účinků, zvýšení toxicity, snížení účinnosti nebo ohrožení zdraví pacienta).
 
@@ -46,96 +62,67 @@ Do pole "popis_problemu" u každé interakce VŽDY napiš konkrétní větu z le
 
 Všechny texty v JSONu musí být v českém jazyce, srozumitelné pro běžného laického pacienta, ale medicínsky přesné.`;
 
-module.exports = async function handler(req, res) {
+// ─── API funkce ────────────────────────────────────────────────────────────────
 
-  // Pouze POST požadavky
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+// ─── Detekce prostředí ──────────────────────────────────────────────────────
+
+function getApiBaseUrl(): string {
+  // 1. Pokud je nastavena proměnná EXPO_PUBLIC_API_URL (např. při EAS build), použijeme ji
+  const envApiUrl = process.env.EXPO_PUBLIC_API_URL;
+  if (envApiUrl) {
+    return envApiUrl;
   }
 
-  const { medicines } = req.body;
-
-  if (!medicines || !Array.isArray(medicines) || medicines.length < 2) {
-    return res.status(400).json({
-      error: 'Je třeba zadat alespoň 2 léky k analýze.',
-    });
+  // 2. Ve vývojovém prostředí používáme lokální proxy server
+  if (__DEV__) {
+    return 'http://localhost:3001/api';
   }
 
-  const apiKey = process.env.EXPO_PUBLIC_DEEPSEEK_API_KEY;
+  // 3. V produkci (nativní APK) – fallback, ale mělo by být nastaveno přes EXPO_PUBLIC_API_URL
+  return 'http://localhost:3001/api';
+}
 
-  if (!apiKey) {
-    return res.status(500).json({
-      error:
-        'Chybí API klíč pro DeepSeek. Nastavte ho v Vercel dashboardu jako EXPO_PUBLIC_DEEPSEEK_API_KEY.',
-    });
-  }
+export async function analyzeMedicines(
+  medicines: Medicine[]
+): Promise<AnalyzeResult> {
+  const API_URL = `${getApiBaseUrl()}/analyze`;
 
-  // ─── Příprava payloadu ────────────────────────────────────────────────────
+  console.log('📤 Odesílám požadavek na API...');
+  console.log('📦 URL:', API_URL);
+  console.log('📦 Léky:', medicines.map((m) => m.name).join(', '));
 
-  const medicinesPayload = medicines.map((m) => ({
-    nazev: m.name,
-    pribalovy_letak: m.leafletText,
-  }));
-
+  let response;
   try {
-    console.log('📤 Odesílám požadavek na DeepSeek API...');
-    console.log('📦 Data:', JSON.stringify(medicinesPayload, null, 2));
-
-    const response = await fetch(DEEPSEEK_API_URL, {
+    response = await fetch(API_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${apiKey}`,
       },
-      body: JSON.stringify({
-        model: 'deepseek-chat',
-        messages: [
-          { role: 'system', content: SYSTEM_PROMPT },
-          {
-            role: 'user',
-            content: JSON.stringify(medicinesPayload),
-          },
-        ],
-        response_format: { type: 'json_object' },
-      }),
+      body: JSON.stringify({ medicines }),
     });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error('❌ DeepSeek API error:', response.status, errorText);
-      return res.status(response.status).json({
-        error: `DeepSeek API vrátilo chybu (${response.status}): ${errorText}`,
-      });
-    }
-
-    const data = await response.json();
-    console.log('📥 Odpověď z DeepSeek API:', JSON.stringify(data, null, 2));
-
-    const content = data.choices?.[0]?.message?.content;
-
-    if (!content) {
-      return res.status(500).json({
-        error: 'DeepSeek API nevrátilo žádný obsah.',
-      });
-    }
-
-    // Pokusíme se parsovat JSON
-    let result;
-    try {
-      result = JSON.parse(content);
-    } catch (parseError) {
-      console.error('❌ Chyba parsování JSON:', content);
-      return res.status(500).json({
-        error: `Odpověď z DeepSeek není validní JSON: ${content}`,
-      });
-    }
-
-    console.log('✅ Výsledek analýzy:', JSON.stringify(result, null, 2));
-    res.json(result);
-  } catch (error) {
-    console.error('❌ Neočekávaná chyba:', error.message);
-    res.status(500).json({
-      error: `Neočekávaná chyba při komunikaci s DeepSeek API: ${error.message}`,
-    });
+  } catch (networkError) {
+    console.error('❌ Network Error – API není dostupné:', networkError);
+    console.error('❌ Cause:', (networkError as Error).cause);
+    throw new Error(
+      `Nelze se připojit k API na ${API_URL}. ${
+        __DEV__
+          ? "Spustili jste 'npm run server' v druhém terminálu?"
+          : 'Zkontrolujte, zda je backend nasazený a dostupný.'
+      }`
+    );
   }
+
+  console.log('📥 Status odpovědi:', response.status);
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    console.error('❌ API vrátilo chybu:', response.status, data);
+    throw new Error(
+      data.error || `API vrátilo chybu (${response.status})`
+    );
+  }
+
+  console.log('✅ Data přijata z API');
+  return data as AnalyzeResult;
 }

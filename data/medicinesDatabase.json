@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "Paralen",
+    "leafletText": "Paracetamol může zeslabovat účinek warfarinu a jiných antikoagulancií při dlouhodobém užívání vysokých dávek. Současné užívání s alkoholem zvyšuje riziko poškození jater. Paracetamol může zvyšovat riziko toxicity chloramfenikolu. Při současném užívání s léky na epilepsii (fenytoin, karbamazepin) může dojít ke snížení účinnosti paracetamolu a zvýšení rizika jaterní toxicity."
+  },
+  {
+    "id": 2,
+    "name": "Ibalgin",
+    "leafletText": "Ibuprofen zvyšuje riziko krvácení při současném užívání s warfarinem a jinými antikoagulancii. Současné užívání s kyselinou acetylsalicylovou zvyšuje riziko žaludečního krvácení. Ibuprofen může snižovat účinnost některých léků na vysoký krevní tlak (ACE inhibitory, diuretika). Při kombinaci s lithiem nebo methotrexátem může dojít ke zvýšení jejich toxicity. Současné užívání s kortikosteroidy zvyšuje riziko gastrointestinálního krvácení."
+  },
+  {
+    "id": 3,
+    "name": "Warfarin",
+    "leafletText": "Warfarin interaguje s mnoha léky. Současné užívání s nesteroidními antirevmatiky (Ibalgin, Aulin, Nalgesin) zvyšuje riziko krvácení. Paracetamol ve vysokých dávkách může zesílit antikoagulační účinek. Antibiotika (zejména cefalosporiny, makrolidy, chinolony) mohou výrazně zvýšit účinek warfarinu. Třezalka tečkovaná snižuje účinek warfarinu. Při současném užívání s amiodaronem, statiny nebo některými antimykotiky je nutná úprava dávky a monitorace INR."
+  },
+  {
+    "id": 4,
+    "name": "Anopyrin",
+    "leafletText": "Kyselina acetylsalicylová zvyšuje riziko krvácení při současném užívání s warfarinem, heparinem a jinými antikoagulancii. Současné užívání s ibuprofenem a jinými NSAID zvyšuje riziko žaludečního krvácení. Kyselina acetylsalicylová může zesílit účinek methotrexátu a zvýšit jeho toxicitu. Při kombinaci s ACE inhibitory může dojít ke snížení jejich účinnosti. Současné užívání s kortikosteroidy zvyšuje riziko gastrointestinálního krvácení."
+  },
+  {
+    "id": 5,
+    "name": "Lexaurin",
+    "leafletText": "Bromazepam může zesilovat účinky léků tlumících centrální nervovou soustavu – alkoholu, opioidů, antipsychotik, antidepresiv, antihistaminik a hypnotik. Současné užívání s alkoholem výrazně zvyšuje sedativní účinek a může vést k útlumu dechu. Při kombinaci s cimetidinem nebo omeprazolem může dojít ke zvýšení účinku bromazepamu. Kouření může snižovat účinnost bromazepamu."
+  },
+  {
+    "id": 6,
+    "name": "Prestarium",
+    "leafletText": "Perindopril zvyšuje riziko hypotenze při současném užívání s diuretiky, jinými antihypertenzivy a alkoholem. Současné užívání s draslík šetřícími diuretiky, doplňky draslíku nebo náhradami soli obsahujícími draslík může vést k hyperkalemii. Perindopril může zvyšovat hladinu lithia a jeho toxicitu. Při kombinaci s nesteroidními antirevmatiky (ibuprofen, diklofenak) může dojít ke snížení účinku perindoprilu a zvýšení rizika poškození ledvin."
+  },
+  {
+    "id": 7,
+    "name": "Xarelto",
+    "leafletText": "Rivaroxaban zvyšuje riziko krvácení při současném užívání s jinými antikoagulancii (warfarin, heparin), nesteroidními antirevmatiky (Ibalgin, Nalgesin) a antiagregancii (Anopyrin). Současné užívání s azolovými antimykotiky (ketokonazol, itrakonazol), ritonavirem nebo clarithromycinem může zvýšit hladinu rivaroxabanu a riziko krvácení. Při kombinaci s rifampicinem, fenytoinem nebo třezalkou tečkovanou může dojít ke snížení účinnosti rivaroxabanu."
+  },
+  {
+    "id": 8,
+    "name": "Eliquis",
+    "leafletText": "Apixaban zvyšuje riziko krvácení při současném užívání s jinými antikoagulancii, nesteroidními antirevmatiky a antiagregancii. Současné užívání s azolovými antimykotiky, ritonavirem nebo clarithromycinem může zvýšit hladinu apixabanu. Při kombinaci s rifampicinem, fenytoinem, karbamazepinem nebo třezalkou tečkovanou může dojít ke snížení účinnosti apixabanu. Současné užívání s inhibitory zpětného vychytávání serotoninu (SSRI) může mírně zvýšit riziko krvácení."
+  },
+  {
+    "id": 9,
+    "name": "Metformin",
+    "leafletText": "Metformin může zvyšovat riziko laktátové acidózy při současném užívání s alkoholem, jodovanými kontrastními látkami a léky způsobujícími hypoxii. Současné užívání s ACE inhibitory, diuretiky nebo NSAID může ovlivnit funkci ledvin a zvýšit riziko laktátové acidózy. Při kombinaci s inzulinem nebo deriváty sulfonylurey hrozí riziko hypoglykémie. Cimetidin může zvyšovat hladinu metforminu."
+  },
+  {
+    "id": 10,
+    "name": "Novalgin",
+    "leafletText": "Metamizol může snižovat účinek warfarinu a jiných antikoagulancií. Současné užívání s methotrexátem zvyšuje riziko jeho toxicity. Metamizol může snižovat hladinu lithia v krvi. Při současném užívání s chlorpromazinem hrozí riziko těžké hypotermie. Metamizol může zvyšovat riziko poškození ledvin při současném užívání s NSAID. U pacientů užívajících busulfan může metamizol zvýšit jeho toxicitu."
+  },
+  {
+    "id": 11,
+    "name": "Aulin",
+    "leafletText": "Nimesulid zvyšuje riziko krvácení při současném užívání s warfarinem a jinými antikoagulancii. Současné užívání s kyselinou acetylsalicylovou nebo jinými NSAID zvyšuje riziko žaludečního krvácení. Nimesulid může snižovat účinnost diuretik a ACE inhibitorů. Při kombinaci s methotrexátem nebo lithiem může dojít ke zvýšení jejich toxicity. Současné užívání s kortikosteroidy zvyšuje riziko gastrointestinálního krvácení."
+  },
+  {
+    "id": 12,
+    "name": "Nalgesin",
+    "leafletText": "Naproxen zvyšuje riziko krvácení při současném užívání s warfarinem a jinými antikoagulancii. Současné užívání s kyselinou acetylsalicylovou nebo jinými NSAID zvyšuje riziko žaludečního krvácení. Naproxen může snižovat účinnost ACE inhibitorů, diuretik a beta-blokátorů. Při kombinaci s methotrexátem nebo lithiem může dojít ke zvýšení jejich toxicity. Současné užívání s SSRI antidepresivy zvyšuje riziko krvácení do trávicího traktu."
+  },
+  {
+    "id": 13,
+    "name": "Enalapril",
+    "leafletText": "Enalapril zvyšuje riziko hypotenze při současném užívání s diuretiky a jinými antihypertenzivy. Současné užívání s draslík šetřícími diuretiky nebo doplňky draslíku může vést k hyperkalemii. Enalapril může zvyšovat hladinu lithia. Při kombinaci s nesteroidními antirevmatiky může dojít ke snížení účinku enalaprilu a zvýšení rizika poškození ledvin. Současné užívání s alopurinolem, cytostatiky nebo kortikosteroidy může zvýšit riziko leukopenie."
+  },
+  {
+    "id": 14,
+    "name": "Betaloc",
+    "leafletText": "Metoprolol může zesilovat účinek jiných antihypertenziv a riziko hypotenze. Současné užívání s verapamilem nebo diltiazemem může vést k bradykardii a hypotenzi. Při kombinaci s inzulinem nebo perorálními antidiabetiky může metoprolol maskovat příznaky hypoglykémie (třes, tachykardie). Současné užívání s NSAID může snižovat antihypertenzní účinek metoprololu. Inhibitory CYP2D6 (fluoxetin, paroxetin) mohou zvyšovat hladinu metoprololu."
+  },
+  {
+    "id": 15,
+    "name": "Letrox",
+    "leafletText": "Levothyroxin může zvyšovat účinek warfarinu a jiných antikoagulancií – je nutná monitorace INR. Současné užívání s léky obsahujícími vápník, železo nebo hořčík snižuje vstřebávání levothyroxinu – je nutný odstup minimálně 4 hodiny. Při kombinaci s amiodaronem může dojít k ovlivnění funkce štítné žlázy. Fenytoin, karbamazepin a rifampicin mohou zvyšovat metabolismus levothyroxinu a snižovat jeho účinnost."
+  },
+  {
+    "id": 16,
+    "name": "Helicid",
+    "leafletText": "Omeprazol může snižovat účinnost klopidogrelu (Plavix) – doporučuje se pantoprazol jako alternativa. Současné užívání s warfarinem může vyžadovat monitoraci INR. Omeprazol může zvyšovat hladinu methotrexátu, fenytoinu a diazepamu. Při dlouhodobém užívání s digoxinem může dojít k mírnému zvýšení jeho hladiny. Současné užívání s třezalkou tečkovanou může snižovat účinnost omeprazolu."
+  },
+  {
+    "id": 17,
+    "name": "Zoloft",
+    "leafletText": "Sertralin zvyšuje riziko krvácení při současném užívání s warfarinem, NSAID (Ibalgin, Nalgesin) a kyselinou acetylsalicylovou. Současné užívání s jinými serotonergními léky (jiná SSRI, SNRI, tramadol, triptany) zvyšuje riziko serotoninového syndromu. Při kombinaci s MAO inhibitory je kontraindikován. Sertralin může zvyšovat hladinu lithia, fenytoinu a některých antipsychotik. Současné užívání s alkoholem se nedoporučuje."
+  },
+  {
+    "id": 18,
+    "name": "Mirtazapin",
+    "leafletText": "Mirtazapin zesiluje sedativní účinky alkoholu, benzodiazepinů a jiných tlumivých látek. Současné užívání s MAO inhibitory je kontraindikováno. Mirtazapin může zvyšovat riziko krvácení při současném užívání s warfarinem nebo NSAID. Při kombinaci s jinými serotonergními léky existuje riziko serotoninového syndromu. Současné užívání s fenytoinem nebo karbamazepinem může snižovat účinnost mirtazapinu."
+  },
+  {
+    "id": 19,
+    "name": "Verospiron",
+    "leafletText": "Spironolakton může vést k hyperkalemii při současném užívání s ACE inhibitory (Prestarium, Enalapril), ARB blokátory nebo doplňky draslíku. Současné užívání s NSAID může snižovat diuretický účinek a zvyšovat riziko poškození ledvin. Spironolakton může zvyšovat účinek digoxinu a lithia. Při kombinaci s jinými antihypertenzivy hrozí riziko hypotenze. Současné užívání s kortikosteroidy může snižovat účinek spironolaktonu."
+  },
+  {
+    "id": 20,
+    "name": "Zyrtec",
+    "leafletText": "Cetirizin může zesilovat účinky alkoholu a jiných tlumivých látek na centrální nervovou soustavu, i když je tento účinek méně výrazný než u starších antihistaminik. Současné užívání s teofylinem může mírně snižovat účinnost cetirizinu. Při kombinaci s léky ovlivňujícími CNS (hypnotika, sedativa) je třeba opatrnost. Cetirizin může zvyšovat riziko retence moči u pacientů s hyperplazií prostaty."
+  },
+  {
+    "id": 21,
+    "name": "Concor",
+    "leafletText": "Bisoprolol může zesilovat účinek jiných antihypertenziv a riziko hypotenze. Současné užívání s verapamilem nebo diltiazemem je kontraindikováno pro riziko těžké bradykardie a srdečního selhání. Při kombinaci s inzulinem nebo antidiabetiky může maskovat příznaky hypoglykémie. Současné užívání s NSAID může snižovat antihypertenzní účinek. Inhibitory CYP2D6 (fluoxetin, paroxetin) mohou zvyšovat hladinu bisoprololu."
+  },
+  {
+    "id": 22,
+    "name": "Tritace",
+    "leafletText": "Ramipril zvyšuje riziko hypotenze při současném užívání s diuretiky a jinými antihypertenzivy. Současné užívání s draslík šetřícími diuretiky nebo doplňky draslíku může vést k hyperkalemii. Při kombinaci s NSAID může dojít ke snížení účinku ramiprilu a zvýšení rizika poškození ledvin. Ramipril může zvyšovat hladinu lithia. Současné užívání s alopurinolem zvyšuje riziko neutropenie."
+  },
+  {
+    "id": 23,
+    "name": "Agen",
+    "leafletText": "Amlodipin může zesilovat účinek jiných antihypertenziv. Současné užívání se silnými inhibitory CYP3A4 (ketokonazol, itrakonazol, ritonavir) může zvýšit hladinu amlodipinu a riziko hypotenze. Grapefruitová šťáva může zvyšovat hladinu amlodipinu. Při kombinaci s NSAID může dojít ke snížení antihypertenzního účinku. Současné užívání s lithiem může zvýšit riziko jeho toxicity."
+  },
+  {
+    "id": 24,
+    "name": "Atoris",
+    "leafletText": "Atorvastatin zvyšuje riziko myopatie a rhabdomyolýzy při současném užívání s fibráty, niacinem, kolchicinem nebo silnými inhibitory CYP3A4 (ketokonazol, erythromycin, clarithromycin, ritonavir). Současné užívání s grapefruitovou šťávou zvyšuje hladinu atorvastatinu. Při kombinaci s warfarinem je nutná monitorace INR. Atorvastatin může zvyšovat hladinu digoxinu a perorálních kontraceptiv."
+  },
+  {
+    "id": 25,
+    "name": "Sortis",
+    "leafletText": "Atorvastatin (Sortis) zvyšuje riziko myopatie a rhabdomyolýzy při současném užívání s fibráty, niacinem nebo inhibitory CYP3A4. Současné užívání s grapefruitovou šťávou zvyšuje hladinu atorvastatinu. Při kombinaci s warfarinem je nutná monitorace INR. Atorvastatin může zvyšovat hladinu digoxinu. Současné užívání s antacidy snižuje vstřebávání – dodržujte odstup 2 hodin."
+  },
+  {
+    "id": 26,
+    "name": "Tramal",
+    "leafletText": "Tramadol zvyšuje riziko serotoninového syndromu při současném užívání s SSRI, SNRI, MAO inhibitory a triptany. Současné užívání s alkoholem a jinými tlumivými látkami zvyšuje riziko útlumu dechu. Tramadol může snižovat práh pro vznik křečí, zejména při kombinaci s antidepresivy a antipsychotiky. Při kombinaci s warfarinem může dojít k ovlivnění INR. Karbamazepin a rifampicin snižují účinnost tramadolu."
+  },
+  {
+    "id": 27,
+    "name": "Neurol",
+    "leafletText": "Neurol (fenobarbital) je antiepileptikum s tlumivým účinkem na CNS. Současné užívání s alkoholem, benzodiazepiny, opioidy a jinými tlumivými látkami výrazně zvyšuje riziko útlumu dechu a sedace. Neurol indukuje jaterní enzymy a může snižovat účinnost warfarinu, perorálních kontraceptiv, antidepresiv a antiepileptik. Při náhlém vysazení hrozí riziko epileptických záchvatů."
+  },
+  {
+    "id": 28,
+    "name": "Convulex",
+    "leafletText": "Kyselina valproová může zvyšovat hladinu fenobarbitalu, fenytoinu a lamotriginu – je nutná úprava dávkování. Současné užívání s karbamazepinem snižuje hladinu valproátu. Při kombinaci s warfarinem může dojít k ovlivnění INR. Kyselina valproová zvyšuje riziko hepatotoxicity při současném užívání s paracetamolem a jinými hepatotoxickými látkami. Současné užívání s topiramátem zvyšuje riziko hyperamonémie."
+  },
+  {
+    "id": 29,
+    "name": "Citalec",
+    "leafletText": "Citalopram zvyšuje riziko krvácení při současném užívání s warfarinem, NSAID a kyselinou acetylsalicylovou. Současné užívání s jinými serotonergními léky (jiná SSRI, SNRI, tramadol, triptany, třezalka) zvyšuje riziko serotoninového syndromu. Při kombinaci s MAO inhibitory je kontraindikován. Citalopram může prodlužovat QT interval – opatrnost při kombinaci s jinými léky prodlužujícími QT interval."
+  },
+  {
+    "id": 30,
+    "name": "Risperdal",
+    "leafletText": "Risperidon může zesilovat účinek antihypertenziv a riziko hypotenze. Současné užívání s alkoholem, benzodiazepiny a jinými tlumivými látkami zvyšuje sedativní účinek. Při kombinaci s léky prodlužujícími QT interval hrozí riziko arytmií. Risperidon může zvyšovat hladinu prolaktinu. Současné užívání s karbamazepinem a rifampicinem snižuje účinnost risperidonu. Fluoxetin a paroxetin mohou zvyšovat hladinu risperidonu."
+  },
+  {
+    "id": 31,
+    "name": "Digoxin",
+    "leafletText": "Digoxin má úzké terapeutické okno. Současné užívání s amiodaronem, verapamilem, diltiazemem, spironolaktonem a chinidinem zvyšuje hladinu digoxinu a riziko toxicity. Hypokalemie vyvolaná diuretiky zvyšuje riziko digoxinové toxicity. Současné užívání s NSAID může snižovat účinnost digoxinu. Při kombinaci s makrolidovými antibiotiky (clarithromycin, erythromycin) může dojít ke zvýšení hladiny digoxinu."
+  },
+  {
+    "id": 32,
+    "name": "Cordarone",
+    "leafletText": "Amiodaron zvyšuje hladinu warfarinu – je nutná výrazná redukce dávky warfarinu a monitorace INR. Současné užívání s digoxinem zvyšuje hladinu digoxinu. Amiodaron může zvyšovat účinek statinů a riziko myopatie. Při kombinaci s léky prodlužujícími QT interval hrozí riziko závažných arytmií. Současné užívání s betablokátory a blokátory kalciových kanálů zvyšuje riziko bradykardie."
+  },
+  {
+    "id": 33,
+    "name": "Augmentin",
+    "leafletText": "Amoxicilin s kyselinou klavulanovou může snižovat účinnost perorálních kontraceptiv. Současné užívání s warfarinem může zvyšovat INR a riziko krvácení. Augmentin může zvyšovat riziko toxicity methotrexátu. Při kombinaci s alopurinolem zvyšuje riziko kožních vyrážek. Současné užívání s probenecidem zvyšuje hladinu amoxicilinu."
+  },
+  {
+    "id": 34,
+    "name": "Controloc",
+    "leafletText": "Pantoprazol může snižovat vstřebávání léků závislých na kyselém pH (ketokonazol, itrakonazol, atazanavir). Současné užívání s warfarinem může vyžadovat monitoraci INR. Pantoprazol může zvyšovat hladinu methotrexátu. Při dlouhodobém užívání zvyšuje riziko osteoporotických fraktur a infekce Clostridium difficile. Současné užívání s třezalkou tečkovanou může snižovat účinnost pantoprazolu."
+  },
+  {
+    "id": 35,
+    "name": "Claritine",
+    "leafletText": "Loratadin má minimální sedativní účinek, ale při současném užívání s alkoholem nebo jinými tlumivými látkami může dojít k zesílení únavy. Současné užívání s ketokonazolem, erythromycinem nebo cimetidinem může zvyšovat hladinu loratadinu. Při kombinaci s léky ovlivňujícími CNS je třeba opatrnost. Loratadin může zvyšovat riziko retence moči u pacientů s hyperplazií prostaty."
+  },
+  {
+    "id": 36,
+    "name": "Omnic",
+    "leafletText": "Tamsulosin může způsobovat ortostatickou hypotenzi, zejména při současném užívání s jinými antihypertenzivy. Současné užívání se silnými inhibitory CYP3A4 (ketokonazol, ritonavir) zvyšuje hladinu tamsulosinu. Při kombinaci s jinými alfa-blokátory hrozí riziko těžké hypotenze. Tamsulosin může způsobovat intraoperační syndrom plovoucí duhovky při operaci šedého zákalu."
+  },
+  {
+    "id": 37,
+    "name": "Ventolin",
+    "leafletText": "Salbutamol může zvyšovat účinek jiných sympatomimetik a riziko kardiovaskulárních nežádoucích účinků. Současné užívání s betablokátory (Concor, Betaloc) může snižovat účinnost salbutamolu. Při kombinaci s diuretiky a kortikosteroidy hrozí riziko hypokalemie. Současné užívání s MAO inhibitory a tricyklickými antidepresivy může zvyšovat riziko kardiovaskulárních účinků."
+  },
+  {
+    "id": 38,
+    "name": "Seretide",
+    "leafletText": "Salmeterol s flutikasonem – současné užívání s betablokátory může snižovat účinnost salmeterolu. Při kombinaci se silnými inhibitory CYP3A4 (ketokonazol, ritonavir) může dojít ke zvýšení hladiny salmeterolu a riziku kardiovaskulárních účinků. Současné užívání s diuretiky může zvyšovat riziko hypokalemie. Flutikason může zesilovat účinek warfarinu."
+  },
+  {
+    "id": 39,
+    "name": "Magne B6",
+    "leafletText": "Hořčík s vitaminem B6 – současné užívání s některými diuretiky může zvyšovat vylučování hořčíku močí. Vysoké dávky hořčíku mohou snižovat vstřebávání tetracyklinových antibiotik a bisfosfonátů – je nutný odstup minimálně 2 hodiny. Při kombinaci s léky na Parkinsonovu chorobu (levodopa) může vitamin B6 snižovat jejich účinnost."
+  },
+  {
+    "id": 40,
+    "name": "Wobenzym",
+    "leafletText": "Wobenzym obsahuje proteolytické enzymy. Současné užívání s antikoagulancii (warfarin, Xarelto, Eliquis) může zvyšovat riziko krvácení. Při kombinaci s NSAID je třeba opatrnost. Wobenzym může zvyšovat vstřebávání antibiotik a jiných léků. Současné užívání s léky tlumícími imunitní systém může snižovat účinnost enzymů."
+  },
+  {
+    "id": 41,
+    "name": "Diazepam",
+    "leafletText": "Diazepam výrazně zesiluje účinky alkoholu, opioidů, barbiturátů a jiných tlumivých látek – hrozí útlum dechu. Současné užívání s cimetidinem, omeprazolem nebo fluoxetinem může zvyšovat hladinu diazepamu. Při kombinaci s karbamazepinem a rifampicinem může dojít ke snížení účinnosti diazepamu. Kouření zvyšuje metabolismus diazepamu a snižuje jeho účinnost."
+  },
+  {
+    "id": 42,
+    "name": "Xanax",
+    "leafletText": "Alprazolam zesiluje tlumivý účinek alkoholu, opioidů, antipsychotik, antidepresiv a hypnotik – hrozí útlum dechu. Současné užívání s ketokonazolem, itrakonazolem, ritonavirem nebo fluoxetinem může výrazně zvýšit hladinu alprazolamu. Při kombinaci s karbamazepinem nebo třezalkou tečkovanou může dojít ke snížení účinnosti. Náhlé vysazení může vyvolat rebound úzkost a křeče."
+  },
+  {
+    "id": 43,
+    "name": "Stilnox",
+    "leafletText": "Zolpidem výrazně zesiluje tlumivý účinek alkoholu, opioidů, benzodiazepinů a jiných hypnotik – hrozí útlum dechu. Současné užívání s inhibitory CYP3A4 (ketokonazol, ritonavir) může zvyšovat hladinu zolpidemu. Při kombinaci s rifampicinem nebo karbamazepinem může dojít ke snížení účinnosti. Zolpidem může způsobovat náměsíčnost a amnézii."
+  },
+  {
+    "id": 44,
+    "name": "Lyrica",
+    "leafletText": "Pregabalin zesiluje účinky alkoholu, opioidů, benzodiazepinů a jiných tlumivých látek na CNS. Současné užívání s antihypertenzivy může zvyšovat riziko hypotenze a závratí. Při kombinaci s léky tlumícími CNS hrozí riziko nadměrné sedace a útlumu dechu. Pregabalin může způsobovat otoky – opatrnost při kombinaci s léky ovlivňujícími srdeční funkci."
+  },
+  {
+    "id": 45,
+    "name": "Forxiga",
+    "leafletText": "Dapagliflozin zvyšuje riziko hypoglykémie při současném užívání s inzulinem nebo deriváty sulfonylurey – může být nutná úprava dávky. Současné užívání s diuretiky zvyšuje riziko dehydratace a hypotenze. Dapagliflozin může zvyšovat riziko genitálních mykotických infekcí. Při kombinaci s ACE inhibitory hrozí riziko hyperkalemie."
+  },
+  {
+    "id": 46,
+    "name": "Jardiance",
+    "leafletText": "Empagliflozin zvyšuje riziko hypoglykémie při současném užívání s inzulinem nebo deriváty sulfonylurey. Současné užívání s diuretiky zvyšuje riziko dehydratace a hypotenze. Empagliflozin může zvyšovat riziko genitálních mykotických infekcí. Při kombinaci s ACE inhibitory nebo ARB blokátory hrozí riziko hyperkalemie. Vzácným nežádoucím účinkem je euglykemická ketoacidóza."
+  },
+  {
+    "id": 47,
+    "name": "Januvia",
+    "leafletText": "Sitagliptin zvyšuje riziko hypoglykémie při současném užívání s inzulinem nebo deriváty sulfonylurey. Současné užívání s digoxinem může mírně zvyšovat hladinu digoxinu. Sitagliptin může zvyšovat riziko pankreatitidy, zejména při kombinaci s jinými léky ovlivňujícími slinivku. Při kombinaci s ACE inhibitory hrozí riziko angioedému."
+  },
+  {
+    "id": 48,
+    "name": "Lantus",
+    "leafletText": "Inzulin glargin – riziko hypoglykémie se zvyšuje při současném užívání s perorálními antidiabetiky, alkoholem, salicyláty a některými antidepresivy (MAO inhibitory). Betablokátory (Concor, Betaloc) mohou maskovat příznaky hypoglykémie. Současné užívání s kortikosteroidy, diuretiky nebo hormony štítné žlázy může zvyšovat potřebu inzulinu."
+  },
+  {
+    "id": 49,
+    "name": "NovoRapid",
+    "leafletText": "Inzulin aspart – riziko hypoglykémie se zvyšuje při současném užívání s perorálními antidiabetiky, alkoholem a salicyláty. Betablokátory mohou maskovat příznaky hypoglykémie. Současné užívání s kortikosteroidy, hormony štítné žlázy, diuretiky nebo některými antipsychotiky (Zyprexa, Seroquel) může zvyšovat potřebu inzulinu."
+  },
+  {
+    "id": 50,
+    "name": "Siofor",
+    "leafletText": "Metformin (Siofor) může zvyšovat riziko laktátové acidózy při současném užívání s alkoholem, jodovanými kontrastními látkami a léky způsobujícími hypoxii. Současné užívání s ACE inhibitory, diuretiky nebo NSAID může ovlivnit funkci ledvin a zvýšit riziko laktátové acidózy. Při kombinaci s inzulinem nebo deriváty sulfonylurey hrozí riziko hypoglykémie."
+  },
+  {
+    "id": 51,
+    "name": "Fentanyl",
+    "leafletText": "Fentanyl výrazně zesiluje tlumivý účinek alkoholu, benzodiazepinů, jiných opioidů a hypnotik – hrozí těžký útlum dechu a smrt. Současné užívání s MAO inhibitory je kontraindikováno. Při kombinaci se SSRI, SNRI a triptany hrozí serotoninový syndrom. Silné inhibitory CYP3A4 (ketokonazol, ritonavir) mohou výrazně zvýšit hladinu fentanylu. Rifampicin a karbamazepin snižují účinnost fentanylu."
+  },
+  {
+    "id": 52,
+    "name": "Oxycodon",
+    "leafletText": "Oxykodon výrazně zesiluje tlumivý účinek alkoholu, benzodiazepinů, jiných opioidů a hypnotik – hrozí útlum dechu. Současné užívání s MAO inhibitory je kontraindikováno. Při kombinaci se SSRI a SNRI hrozí serotoninový syndrom. Silné inhibitory CYP3A4 (ketokonazol, ritonavir, clarithromycin) zvyšují hladinu oxykodonu. Karbamazepin a rifampicin snižují jeho účinnost."
+  },
+  {
+    "id": 53,
+    "name": "Codein",
+    "leafletText": "Kodein zesiluje tlumivý účinek alkoholu, benzodiazepinů a jiných opioidů – hrozí útlum dechu. Současné užívání s MAO inhibitory je kontraindikováno. Při kombinaci se SSRI a SNRI hrozí serotoninový syndrom. Kodein je prodrogou morfinu – u některých jedinců (ultrarychlí metabolizéři CYP2D6) hrozí riziko předávkování i při standardních dávkách. Karbamazepin a rifampicin snižují účinnost kodeinu."
+  },
+  {
+    "id": 54,
+    "name": "Morphine",
+    "leafletText": "Morfin výrazně zesiluje tlumivý účinek alkoholu, benzodiazepinů, jiných opioidů a hypnotik – hrozí těžký útlum dechu. Současné užívání s MAO inhibitory je kontraindikováno. Při kombinaci s některými antidepresivy hrozí serotoninový syndrom. Morfin může zvyšovat účinek warfarinu. Současné užívání s rifampicinem nebo karbamazepinem může snižovat účinnost morfinu."
+  },
+  {
+    "id": 55,
+    "name": "Dolex",
+    "leafletText": "Dolex (propoxyfen) zesiluje tlumivý účinek alkoholu, benzodiazepinů a jiných opioidů – hrozí útlum dechu. Současné užívání s MAO inhibitory je kontraindikováno. Při kombinaci s warfarinem může dojít k ovlivnění INR. Dolex může zvyšovat hladinu karbamazepinu a některých antidepresiv. Současné užívání s rifampicinem snižuje účinnost propoxyfenu."
+  },
+  {
+    "id": 56,
+    "name": "Algifen",
+    "leafletText": "Algifen obsahuje metamizol a pitofenon. Metamizol může snižovat účinek warfarinu a jiných antikoagulancií. Současné užívání s methotrexátem zvyšuje riziko jeho toxicity. Pitofenon může zesilovat účinek anticholinergik a způsobovat sucho v ústech, zácpu a poruchy akomodace. Při kombinaci s jinými spazmolytiky hrozí riziko nadměrné anticholinergní zátěže."
+  },
+  {
+    "id": 57,
+    "name": "Valetol",
+    "leafletText": "Valetol obsahuje metamizol a kofein. Metamizol může snižovat účinek warfarinu a jiných antikoagulancií. Současné užívání s methotrexátem zvyšuje riziko jeho toxicity. Kofein může zesilovat účinek jiných stimulancií a zvyšovat riziko nespavosti a palpitací. Při kombinaci s chinolonovými antibiotiky (Ofloxin) může kofein způsobovat nadměrnou stimulaci CNS."
+  },
+  {
+    "id": 58,
+    "name": "Frontin",
+    "leafletText": "Alprazolam (Frontin) zesiluje tlumivý účinek alkoholu, opioidů, antipsychotik a hypnotik – hrozí útlum dechu. Současné užívání s ketokonazolem, itrakonazolem nebo ritonavirem může výrazně zvýšit hladinu alprazolamu. Při kombinaci s karbamazepinem nebo třezalkou tečkovanou může dojít ke snížení účinnosti. Náhlé vysazení může vyvolat rebound úzkost, nespavost a křeče."
+  },
+  {
+    "id": 59,
+    "name": "Rohypnol",
+    "leafletText": "Flunitrazepam výrazně zesiluje tlumivý účinek alkoholu, opioidů, antipsychotik a jiných hypnotik – hrozí těžký útlum dechu. Současné užívání s cimetidinem nebo omeprazolem může zvyšovat hladinu flunitrazepamu. Při kombinaci s karbamazepinem nebo rifampicinem může dojít ke snížení účinnosti. Flunitrazepam způsobuje výraznou anterográdní amnézii."
+  },
+  {
+    "id": 60,
+    "name": "Hypnogen",
+    "leafletText": "Zolpidem (Hypnogen) výrazně zesiluje tlumivý účinek alkoholu, opioidů a benzodiazepinů – hrozí útlum dechu. Současné užívání s inhibitory CYP3A4 (ketokonazol, ritonavir) může zvyšovat hladinu zolpidemu. Při kombinaci s rifampicinem nebo karbamazepinem může dojít ke snížení účinnosti. Zolpidem může způsobovat náměsíčnost, amnézii a riziko pádu."
+  },
+  {
+    "id": 61,
+    "name": "Deprex",
+    "leafletText": "Fluoxetin zvyšuje riziko krvácení při současném užívání s warfarinem, NSAID a kyselinou acetylsalicylovou. Současné užívání s jinými serotonergními léky (jiná SSRI, SNRI, tramadol, triptany, třezalka) zvyšuje riziko serotoninového syndromu. Při kombinaci s MAO inhibitory je kontraindikován – nutný alespoň 14denní interval. Fluoxetin je silný inhibitor CYP2D6 a může zvyšovat hladinu mnoha léků (betablokátory, antipsychotika, antidepresiva)."
+  },
+  {
+    "id": 62,
+    "name": "Asentra",
+    "leafletText": "Sertralin (Asentra) zvyšuje riziko krvácení při současném užívání s warfarinem, NSAID a kyselinou acetylsalicylovou. Současné užívání s jinými serotonergními léky zvyšuje riziko serotoninového syndromu. Při kombinaci s MAO inhibitory je kontraindikován. Sertralin může zvyšovat hladinu lithia, fenytoinu a warfarinu. Současné užívání s alkoholem se nedoporučuje."
+  },
+  {
+    "id": 63,
+    "name": "Escitalopram",
+    "leafletText": "Escitalopram zvyšuje riziko krvácení při současném užívání s warfarinem, NSAID a kyselinou acetylsalicylovou. Současné užívání s jinými serotonergními léky zvyšuje riziko serotoninového syndromu. Při kombinaci s MAO inhibitory je kontraindikován. Escitalopram může prodlužovat QT interval – opatrnost při kombinaci s jinými léky prodlužujícími QT interval (amiodaron, některá antipsychotika)."
+  },
+  {
+    "id": 64,
+    "name": "Venlafaxin",
+    "leafletText": "Venlafaxin zvyšuje riziko krvácení při současném užívání s warfarinem, NSAID a kyselinou acetylsalicylovou. Současné užívání s jinými serotonergními léky výrazně zvyšuje riziko serotoninového syndromu. Při kombinaci s MAO inhibitory je kontraindikován. Venlafaxin může zvyšovat krevní tlak – opatrnost při kombinaci s jinými léky ovlivňujícími tlak. Při náhlém vysazení hrozí výrazný diskomfort."
+  },
+  {
+    "id": 65,
+    "name": "Mirzaten",
+    "leafletText": "Mirtazapin (Mirzaten) zesiluje sedativní účinky alkoholu, benzodiazepinů a jiných tlumivých látek. Současné užívání s MAO inhibitory je kontraindikováno. Mirtazapin může zvyšovat riziko krvácení při současném užívání s warfarinem nebo NSAID. Při kombinaci s jinými serotonergními léky existuje riziko serotoninového syndromu. Současné užívání s fenytoinem nebo karbamazepinem může snižovat účinnost mirtazapinu."
+  },
+  {
+    "id": 66,
+    "name": "Trittico",
+    "leafletText": "Trazodon zesiluje sedativní účinky alkoholu, benzodiazepinů a jiných tlumivých látek. Současné užívání s MAO inhibitory je kontraindikováno. Při kombinaci s jinými serotonergními léky hrozí serotoninový syndrom. Trazodon může způsobovat priapismus (vzácný, ale závažný nežádoucí účinek). Současné užívání s warfarinem může ovlivnit INR. Silné inhibitory CYP3A4 (ketokonazol) zvyšují hladinu trazodonu."
+  },
+  {
+    "id": 67,
+    "name": "Zyprexa",
+    "leafletText": "Olanzapin může zesilovat účinek antihypertenziv a riziko hypotenze. Současné užívání s alkoholem a jinými tlumivými látkami zvyšuje sedativní účinek. Olanzapin může způsobovat výrazný přírůstek hmotnosti a ovlivňovat metabolismus glukózy – opatrnost při kombinaci s antidiabetiky. Kouření zvyšuje metabolismus olanzapinu a snižuje jeho účinnost. Současné užívání s karbamazepinem snižuje hladinu olanzapinu."
+  },
+  {
+    "id": 68,
+    "name": "Seroquel",
+    "leafletText": "Kvetiapin zesiluje účinek antihypertenziv a riziko ortostatické hypotenze. Současné užívání s alkoholem, benzodiazepiny a jinými tlumivými látkami zvyšuje sedativní účinek. Při kombinaci s léky prodlužujícími QT interval hrozí riziko arytmií. Kvetiapin může zvyšovat hladinu prolaktinu a ovlivňovat metabolismus glukózy. Současné užívání s karbamazepinem nebo fenytoinem snižuje účinnost kvetiapinu."
+  },
+  {
+    "id": 69,
+    "name": "Haloperidol",
+    "leafletText": "Haloperidol může zesilovat účinek antihypertenziv. Současné užívání s alkoholem a jinými tlumivými látkami zvyšuje sedativní účinek. Při kombinaci s léky prodlužujícími QT interval hrozí riziko závažných arytmií. Haloperidol zvyšuje riziko extrapyramidových nežádoucích účinků, zejména při kombinaci s jinými antipsychotiky. Současné užívání s karbamazepinem nebo rifampicinem snižuje účinnost haloperidolu."
+  },
+  {
+    "id": 70,
+    "name": "Eglonyl",
+    "leafletText": "Sulpirid může zesilovat účinek antihypertenziv. Současné užívání s alkoholem a jinými tlumivými látkami zvyšuje sedativní účinek. Při kombinaci s léky prodlužujícími QT interval hrozí riziko arytmií. Sulpirid může zvyšovat hladinu prolaktinu. Současné užívání s levodopou a jinými dopaminergními léky snižuje jejich účinnost. Sulpirid může zvyšovat riziko extrapyramidových příznaků."
+  },
+  {
+    "id": 71,
+    "name": "Lamotrigin",
+    "leafletText": "Lamotrigin – současné užívání s kyselinou valproovou (Convulex) výrazně zvyšuje hladinu lamotriginu a riziko závažných kožních reakcí (Stevens-Johnsonův syndrom) – je nutná pomalá titrace dávky. Karbamazepin, fenytoin a rifampicin snižují hladinu lamotriginu. Perorální kontraceptiva mohou snižovat účinnost lamotriginu. Současné užívání s paracetamolem může mírně snižovat hladinu lamotriginu."
+  },
+  {
+    "id": 72,
+    "name": "Gabapentin",
+    "leafletText": "Gabapentin zesiluje účinky alkoholu, opioidů, benzodiazepinů a jiných tlumivých látek na CNS. Současné užívání s antacidy (Rennie, Maalox) snižuje vstřebávání gabapentinu – dodržujte odstup minimálně 2 hodiny. Při kombinaci s jinými antiepileptiky může dojít ke zvýšenému riziku závratí a sedace. Gabapentin může zvyšovat riziko pankreatitidy."
+  },
+  {
+    "id": 73,
+    "name": "Keppra",
+    "leafletText": "Levetiracetam – současné užívání s jinými antiepileptiky může zvyšovat riziko nežádoucích účinků (závratě, únava). Levetiracetam má minimální lékové interakce, ale při kombinaci s methotrexátem může dojít ke zvýšení toxicity methotrexátu. Současné užívání s laxativy může snižovat vstřebávání levetiracetamu. Při náhlém vysazení hrozí riziko epileptických záchvatů."
+  },
+  {
+    "id": 74,
+    "name": "Glucophage",
+    "leafletText": "Metformin (Glucophage) může zvyšovat riziko laktátové acidózy při současném užívání s alkoholem, jodovanými kontrastními látkami a léky způsobujícími hypoxii. Současné užívání s ACE inhibitory, diuretiky nebo NSAID může ovlivnit funkci ledvin a zvýšit riziko laktátové acidózy. Při kombinaci s inzulinem nebo deriváty sulfonylurey hrozí riziko hypoglykémie."
+  },
+  {
+    "id": 75,
+    "name": "Crestor",
+    "leafletText": "Rosuvastatin zvyšuje riziko myopatie a rhabdomyolýzy při současném užívání s fibráty, niacinem nebo kolchicinem. Současné užívání s warfarinem může zvyšovat INR. Rosuvastatin může zvyšovat hladinu perorálních kontraceptiv. Při kombinaci s antacidy snižuje vstřebávání – dodržujte odstup 2 hodin. Silné inhibitory CYP3A4 mají menší vliv na rosuvastatin než na atorvastatin."
+  },
+  {
+    "id": 76,
+    "name": "Rosucard",
+    "leafletText": "Rosuvastatin (Rosucard) zvyšuje riziko myopatie a rhabdomyolýzy při současném užívání s fibráty, niacinem nebo kolchicinem. Současné užívání s warfarinem může zvyšovat INR. Rosuvastatin může zvyšovat hladinu perorálních kontraceptiv. Při kombinaci s antacidy snižuje vstřebávání – dodržujte odstup 2 hodin. Rosuvastatin se vylučuje převážně nezměněný ledvinami."
+  },
+  {
+    "id": 77,
+    "name": "Lipanthyl",
+    "leafletText": "Fenofibrát zvyšuje riziko myopatie a rhabdomyolýzy při současném užívání se statiny (Atoris, Sortis, Crestor) – kombinace vyžaduje pečlivé monitorování. Současné užívání s warfarinem zvyšuje INR a riziko krvácení – je nutná úprava dávky warfarinu. Fenofibrát může zvyšovat hladinu lithia a cyklosporinu. Při kombinaci s perorálními antidiabetiky hrozí riziko hypoglykémie."
+  },
+  {
+    "id": 78,
+    "name": "Ezetrol",
+    "leafletText": "Ezetimib zvyšuje riziko myopatie při současném užívání se statiny a fibráty, i když je toto riziko nižší než u samotných statinů. Současné užívání s warfarinem může ovlivnit INR. Ezetimib může zvyšovat hladinu cyklosporinu. Při kombinaci s cholestyraminem a jinými sekvestranty žlučových kyselin snižuje vstřebávání ezetimibu – dodržujte odstup 4 hodin."
+  },
+  {
+    "id": 79,
+    "name": "Lorista",
+    "leafletText": "Losartan zvyšuje riziko hypotenze při současném užívání s diuretiky a jinými antihypertenzivy. Současné užívání s draslík šetřícími diuretiky nebo doplňky draslíku může vést k hyperkalemii. Při kombinaci s NSAID může dojít ke snížení účinku losartanu a zvýšení rizika poškození ledvin. Losartan může zvyšovat hladinu lithia. Současné užívání s rifampicinem snižuje účinnost losartanu."
+  },
+  {
+    "id": 80,
+    "name": "Telmisartan",
+    "leafletText": "Telmisartan zvyšuje riziko hypotenze při současném užívání s diuretiky a jinými antihypertenzivy. Současné užívání s draslík šetřícími diuretiky nebo doplňky draslíku může vést k hyperkalemii. Při kombinaci s NSAID může dojít ke snížení účinku telmisartanu a zvýšení rizika poškození ledvin. Telmisartan může zvyšovat hladinu digoxinu a lithia."
+  },
+  {
+    "id": 81,
+    "name": "Nebilet",
+    "leafletText": "Nebivolol může zesilovat účinek jiných antihypertenziv a riziko hypotenze. Současné užívání s verapamilem nebo diltiazemem zvyšuje riziko bradykardie. Při kombinaci s inzulinem nebo antidiabetiky může maskovat příznaky hypoglykémie. Současné užívání s NSAID může snižovat antihypertenzní účinek. Inhibitory CYP2D6 (fluoxetin, paroxetin) mohou zvyšovat hladinu nebivololu."
+  },
+  {
+    "id": 82,
+    "name": "Tarka",
+    "leafletText": "Tarka (trandolapril s verapamilem) – kombinace zvyšuje riziko hypotenze, bradykardie a závratí. Současné užívání s draslík šetřícími diuretiky může vést k hyperkalemii. Při kombinaci s NSAID může dojít ke snížení účinku. Grapefruitová šťáva zvyšuje hladinu verapamilu. Současné užívání s betablokátory zvyšuje riziko bradykardie a srdečního selhání."
+  },
+  {
+    "id": 83,
+    "name": "Nitromint",
+    "leafletText": "Nitroglycerin výrazně zesiluje hypotenzní účinek alkoholu, antihypertenziv a vazodilatancií – hrozí těžká hypotenze. Současné užívání s inhibitory PDE5 (sildenafil, tadalafil, vardenafil) je kontraindikováno pro riziko těžké hypotenze a infarktu myokardu. Při kombinaci s heparinem může dojít ke snížení účinnosti heparinu."
+  },
+  {
+    "id": 84,
+    "name": "Carvedilol",
+    "leafletText": "Carvedilol zesiluje účinek jiných antihypertenziv a riziko hypotenze. Současné užívání s verapamilem nebo diltiazemem zvyšuje riziko bradykardie a srdečního selhání. Při kombinaci s inzulinem nebo antidiabetiky může maskovat příznaky hypoglykémie. Současné užívání s NSAID může snižovat antihypertenzní účinek. Carvedilol může zvyšovat hladinu digoxinu a cyklosporinu."
+  },
+  {
+    "id": 85,
+    "name": "Ofloxin",
+    "leafletText": "Ofloxacin (chinolonové antibiotikum) může zvyšovat účinek warfarinu – je nutná monitorace INR. Současné užívání s NSAID zvyšuje riziko stimulace CNS a křečí. Ofloxacin může prodlužovat QT interval. Při kombinaci s antacidy, železem nebo mléčnými výrobky snižuje vstřebávání – dodržujte odstup 2 hodin. Současné užívání s kofeinem zvyšuje riziko nespavosti a nervozity."
+  },
+  {
+    "id": 86,
+    "name": "Klacid",
+    "leafletText": "Clarithromycin je silný inhibitor CYP3A4 – zvyšuje hladinu mnoha léků (statiny, warfarin, digoxin, karbamazepin, fenytoin, benzodiazepiny, cisaprid). Současné užívání s warfarinem výrazně zvyšuje INR. Při kombinaci s kolchicinem hrozí fatální toxicita. Clarithromycin prodlužuje QT interval. Současné užívání s ergotaminem hrozí ergotismus."
+  },
+  {
+    "id": 87,
+    "name": "Doxyhexal",
+    "leafletText": "Doxycyklin může snižovat účinnost perorálních kontraceptiv. Současné užívání s warfarinem může zvyšovat INR. Při kombinaci s antacidy, železem, vápníkem nebo hořčíkem snižuje vstřebávání – dodržujte odstup 2 hodin. Doxycyklin zvyšuje riziko fototoxicity – vyhněte se přímému slunci. Současné užívání s barbituráty a karbamazepinem snižuje účinnost doxycyklinu."
+  },
+  {
+    "id": 88,
+    "name": "Zinnat",
+    "leafletText": "Cefuroxim může snižovat účinnost perorálních kontraceptiv. Současné užívání s warfarinem může zvyšovat INR a riziko krvácení. Při kombinaci s probenecidem se zvyšuje hladina cefuroximu. Cefuroxim může zvyšovat riziko toxicity methotrexátu. Současné užívání s diuretiky (furosemid) může zvyšovat riziko nefrotoxicity."
+  },
+  {
+    "id": 89,
+    "name": "Biseptol",
+    "leafletText": "Kotrimoxazol (sulfamethoxazol s trimethoprimem) výrazně zvyšuje účinek warfarinu – hrozí těžké krvácení. Současné užívání s methotrexátem zvyšuje riziko jeho toxicity. Kotrimoxazol může zvyšovat hladinu fenytoinu a digoxinu. Při kombinaci s ACE inhibitory hrozí riziko hyperkalemie. Současné užívání s diuretiky zvyšuje riziko hyponatremie."
+  },
+  {
+    "id": 90,
+    "name": "Nolpaza",
+    "leafletText": "Pantoprazol (Nolpaza) může snižovat vstřebávání léků závislých na kyselém pH (ketokonazol, itrakonazol, atazanavir). Současné užívání s warfarinem může vyžadovat monitoraci INR. Pantoprazol může zvyšovat hladinu methotrexátu. Při dlouhodobém užívání zvyšuje riziko osteoporotických fraktur a infekce Clostridium difficile. Současné užívání s třezalkou tečkovanou může snižovat účinnost."
+  },
+  {
+    "id": 91,
+    "name": "Motilium",
+    "leafletText": "Domperidon může prodlužovat QT interval – riziko závažných arytmií při kombinaci s jinými léky prodlužujícími QT interval (amiodaron, clarithromycin, některá antipsychotika). Současné užívání se silnými inhibitory CYP3A4 (ketokonazol, ritonavir) zvyšuje hladinu domperidonu. Domperidon může zvyšovat hladinu cyklosporinu. Při kombinaci s antacidy snižuje vstřebávání."
+  },
+  {
+    "id": 92,
+    "name": "Endie",
+    "leafletText": "Endie (hymekromon) – současné užívání s warfarinem může zvyšovat účinek warfarinu a riziko krvácení. Při kombinaci s opioidy (morfin, tramadol) může dojít k zesílení spazmu svěrače Oddiho. Endie může zvyšovat vstřebávání jiných léků podávaných současně. Současné užívání s antacidy může snižovat účinnost hymekromonu."
+  },
+  {
+    "id": 93,
+    "name": "Zodac",
+    "leafletText": "Cetirizin (Zodac) může zesilovat účinky alkoholu a jiných tlumivých látek na CNS, i když je tento účinek méně výrazný než u starších antihistaminik. Současné užívání s teofylinem může mírně snižovat účinnost cetirizinu. Při kombinaci s léky ovlivňujícími CNS (hypnotika, sedativa) je třeba opatrnost. Cetirizin může zvyšovat riziko retence moči u pacientů s hyperplazií prostaty."
+  },
+  {
+    "id": 94,
+    "name": "Fenistil",
+    "leafletText": "Dimetinden může zesilovat účinky alkoholu a jiných tlumivých látek na CNS. Současné užívání s MAO inhibitory může zvyšovat anticholinergní účinky. Při kombinaci s tricyklickými antidepresivy hrozí riziko nadměrné sedace. Dimetinden může zvyšovat riziko retence moči a glaukomu. Současné užívání s léky ovlivňujícími CNS vyžaduje opatrnost."
+  },
+  {
+    "id": 95,
+    "name": "Dithiaden",
+    "leafletText": "Dithiaden (bisulepin) výrazně zesiluje účinky alkoholu, benzodiazepinů, opioidů a jiných tlumivých látek na CNS. Současné užívání s MAO inhibitory je kontraindikováno. Dithiaden má výrazné anticholinergní účinky – riziko retence moči, zácpy a glaukomu. Při kombinaci s tricyklickými antidepresivy hrozí nadměrná anticholinergní zátěž."
+  },
+  {
+    "id": 96,
+    "name": "Fokusin",
+    "leafletText": "Fokusin (tamsulosin) může způsobovat ortostatickou hypotenzi, zejména při současném užívání s jinými antihypertenzivy. Současné užívání se silnými inhibitory CYP3A4 (ketokonazol, ritonavir) zvyšuje hladinu tamsulosinu. Při kombinaci s jinými alfa-blokátory hrozí riziko těžké hypotenze. Tamsulosin může způsobovat intraoperační syndrom plovoucí duhovky při operaci šedého zákalu."
+  },
+  {
+    "id": 97,
+    "name": "Vesicare",
+    "leafletText": "Solifenacin může zesilovat anticholinergní účinky jiných léků (sucho v ústech, zácpa, rozmazané vidění). Současné užívání se silnými inhibitory CYP3A4 (ketokonazol, ritonavir) zvyšuje hladinu solifenacinu. Při kombinaci s léky prodlužujícími QT interval hrozí riziko arytmií. Solifenacin může snižovat motilitu trávicího traktu."
+  },
+  {
+    "id": 98,
+    "name": "Detrusitol",
+    "leafletText": "Tolterodin může zesilovat anticholinergní účinky jiných léků. Současné užívání se silnými inhibitory CYP3A4 (ketokonazol, ritonavir, clarithromycin) zvyšuje hladinu tolterodinu. Při kombinaci s léky prodlužujícími QT interval hrozí riziko arytmií. Tolterodin může snižovat motilitu trávicího traktu a způsobovat sucho v ústech."
+  },
+  {
+    "id": 99,
+    "name": "Symbicort",
+    "leafletText": "Budesonid s formoterolem – současné užívání s betablokátory může snižovat účinnost formoterolu. Při kombinaci se silnými inhibitory CYP3A4 (ketokonazol, ritonavir) může dojít ke zvýšení hladiny budesonidu. Současné užívání s diuretiky může zvyšovat riziko hypokalemie. Budesonid může zesilovat účinek warfarinu. Při kombinaci s MAO inhibitory hrozí riziko hypertenzní krize."
+  },
+  {
+    "id": 100,
+    "name": "Montelukast",
+    "leafletText": "Montelukast má minimální lékové interakce. Současné užívání s warfarinem může vyžadovat monitoraci INR, i když je riziko nízké. Montelukast může zvyšovat hladinu fenytoinu a karbamazepinu. Při kombinaci s gemfibrozilem může dojít ke zvýšení hladiny montelukastu. Současné užívání s rifampicinem může snižovat účinnost montelukastu."
+  }
+]

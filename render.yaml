@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: lekovy-strazce-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: EXPO_PUBLIC_DEEPSEEK_API_KEY
+        sync: false
