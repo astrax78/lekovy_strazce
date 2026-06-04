@@ -8,6 +8,7 @@
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
+      "bundleIdentifier": "com.astrax78.lekovy.strazce",
       "infoPlist": {
         "NSCameraUsageDescription": "Přístup ke kameře je potřebný pro skenování krabiček léků."
       }
